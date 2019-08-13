@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AE3C68823015FED00BE72F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C68723015FED00BE72F7 /* AppDelegate.m */; };
+		2AE3C68B23015FED00BE72F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C68A23015FED00BE72F7 /* ViewController.m */; };
+		2AE3C68E23015FED00BE72F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3C68C23015FED00BE72F7 /* Main.storyboard */; };
+		2AE3C69023015FEE00BE72F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3C68F23015FEE00BE72F7 /* Assets.xcassets */; };
+		2AE3C69323015FEE00BE72F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3C69123015FEE00BE72F7 /* LaunchScreen.storyboard */; };
+		2AE3C69623015FEE00BE72F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C69523015FEE00BE72F7 /* main.m */; };
+		2AE3C6A023015FEE00BE72F7 /* YPScrollPageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C69F23015FEE00BE72F7 /* YPScrollPageViewTests.m */; };
+		2AE3C6AB23015FEE00BE72F7 /* YPScrollPageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C6AA23015FEE00BE72F7 /* YPScrollPageViewUITests.m */; };
+		2AE3C6C12301614100BE72F7 /* YPSubPartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C6BD2301613700BE72F7 /* YPSubPartController.m */; };
+		2AE3C6C22301614100BE72F7 /* YPSubUniteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C6BE2301613700BE72F7 /* YPSubUniteController.m */; };
+		2AE3C6C32301614100BE72F7 /* YPPartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C6BF2301613700BE72F7 /* YPPartController.m */; };
+		2AE3C6C42301614100BE72F7 /* YPUniteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C6C02301613700BE72F7 /* YPUniteController.m */; };
+		2AE3C6D72301615100BE72F7 /* YPSegmentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C6C72301615100BE72F7 /* YPSegmentStyle.m */; };
+		2AE3C6D82301615100BE72F7 /* UIView+YPExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C6CC2301615100BE72F7 /* UIView+YPExtention.m */; };
+		2AE3C6D92301615100BE72F7 /* YPScrollPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C6CF2301615100BE72F7 /* YPScrollPageView.m */; };
+		2AE3C6DA2301615100BE72F7 /* YPContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C6D12301615100BE72F7 /* YPContentView.m */; };
+		2AE3C6DB2301615100BE72F7 /* YPSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C6D22301615100BE72F7 /* YPSegmentView.m */; };
+		2AE3C6DC2301615100BE72F7 /* YPSegmentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C6D32301615100BE72F7 /* YPSegmentItem.m */; };
+		2AE3C6DE2301622100BE72F7 /* YPScrollPageView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3C6DD2301622100BE72F7 /* YPScrollPageView.podspec */; };
+		975C62DEF58D7F3B9A728CC3 /* libPods-YPScrollPageView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C357EE20134BAF0181E743 /* libPods-YPScrollPageView.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AE3C69C23015FEE00BE72F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AE3C67B23015FED00BE72F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AE3C68223015FED00BE72F7;
+			remoteInfo = YPScrollPageView;
+		};
+		2AE3C6A723015FEE00BE72F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AE3C67B23015FED00BE72F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AE3C68223015FED00BE72F7;
+			remoteInfo = YPScrollPageView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AE3C68323015FED00BE72F7 /* YPScrollPageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPScrollPageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE3C68623015FED00BE72F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2AE3C68723015FED00BE72F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2AE3C68923015FED00BE72F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2AE3C68A23015FED00BE72F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2AE3C68D23015FED00BE72F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2AE3C68F23015FEE00BE72F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AE3C69223015FEE00BE72F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2AE3C69423015FEE00BE72F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AE3C69523015FEE00BE72F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2AE3C69B23015FEE00BE72F7 /* YPScrollPageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YPScrollPageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE3C69F23015FEE00BE72F7 /* YPScrollPageViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPScrollPageViewTests.m; sourceTree = "<group>"; };
+		2AE3C6A123015FEE00BE72F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AE3C6A623015FEE00BE72F7 /* YPScrollPageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YPScrollPageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE3C6AA23015FEE00BE72F7 /* YPScrollPageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPScrollPageViewUITests.m; sourceTree = "<group>"; };
+		2AE3C6AC23015FEE00BE72F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AE3C6B92301613700BE72F7 /* YPSubUniteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPSubUniteController.h; sourceTree = "<group>"; };
+		2AE3C6BA2301613700BE72F7 /* YPSubPartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPSubPartController.h; sourceTree = "<group>"; };
+		2AE3C6BB2301613700BE72F7 /* YPUniteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPUniteController.h; sourceTree = "<group>"; };
+		2AE3C6BC2301613700BE72F7 /* YPPartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPPartController.h; sourceTree = "<group>"; };
+		2AE3C6BD2301613700BE72F7 /* YPSubPartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPSubPartController.m; sourceTree = "<group>"; };
+		2AE3C6BE2301613700BE72F7 /* YPSubUniteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPSubUniteController.m; sourceTree = "<group>"; };
+		2AE3C6BF2301613700BE72F7 /* YPPartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPPartController.m; sourceTree = "<group>"; };
+		2AE3C6C02301613700BE72F7 /* YPUniteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPUniteController.m; sourceTree = "<group>"; };
+		2AE3C6C72301615100BE72F7 /* YPSegmentStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPSegmentStyle.m; sourceTree = "<group>"; };
+		2AE3C6C82301615100BE72F7 /* YPSegmentStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPSegmentStyle.h; sourceTree = "<group>"; };
+		2AE3C6CA2301615100BE72F7 /* UIView+YPExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YPExtention.h"; sourceTree = "<group>"; };
+		2AE3C6CB2301615100BE72F7 /* YPScrollPageViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPScrollPageViewDelegate.h; sourceTree = "<group>"; };
+		2AE3C6CC2301615100BE72F7 /* UIView+YPExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YPExtention.m"; sourceTree = "<group>"; };
+		2AE3C6CE2301615100BE72F7 /* YPSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPSegmentView.h; sourceTree = "<group>"; };
+		2AE3C6CF2301615100BE72F7 /* YPScrollPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPScrollPageView.m; sourceTree = "<group>"; };
+		2AE3C6D02301615100BE72F7 /* YPSegmentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPSegmentItem.h; sourceTree = "<group>"; };
+		2AE3C6D12301615100BE72F7 /* YPContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPContentView.m; sourceTree = "<group>"; };
+		2AE3C6D22301615100BE72F7 /* YPSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPSegmentView.m; sourceTree = "<group>"; };
+		2AE3C6D32301615100BE72F7 /* YPSegmentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPSegmentItem.m; sourceTree = "<group>"; };
+		2AE3C6D42301615100BE72F7 /* YPScrollPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPScrollPageView.h; sourceTree = "<group>"; };
+		2AE3C6D52301615100BE72F7 /* YPContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPContentView.h; sourceTree = "<group>"; };
+		2AE3C6D62301615100BE72F7 /* YPHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHeader.h; sourceTree = "<group>"; };
+		2AE3C6DD2301622100BE72F7 /* YPScrollPageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = YPScrollPageView.podspec; sourceTree = SOURCE_ROOT; };
+		564317A4D691A74837168EEC /* Pods-YPScrollPageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPScrollPageView.release.xcconfig"; path = "Target Support Files/Pods-YPScrollPageView/Pods-YPScrollPageView.release.xcconfig"; sourceTree = "<group>"; };
+		9945B6235BAA5E0B0A7B368A /* Pods-YPScrollPageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPScrollPageView.debug.xcconfig"; path = "Target Support Files/Pods-YPScrollPageView/Pods-YPScrollPageView.debug.xcconfig"; sourceTree = "<group>"; };
+		E9C357EE20134BAF0181E743 /* libPods-YPScrollPageView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPScrollPageView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AE3C68023015FED00BE72F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975C62DEF58D7F3B9A728CC3 /* libPods-YPScrollPageView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE3C69823015FEE00BE72F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE3C6A323015FEE00BE72F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AE3C67A23015FED00BE72F7 = {
+			isa = PBXGroup;
+			children = (
+				2AE3C68523015FED00BE72F7 /* YPScrollPageView */,
+				2AE3C69E23015FEE00BE72F7 /* YPScrollPageViewTests */,
+				2AE3C6A923015FEE00BE72F7 /* YPScrollPageViewUITests */,
+				2AE3C68423015FED00BE72F7 /* Products */,
+				9D296E17D50A25CA3EC15C6C /* Pods */,
+				D837331160FB396A49D9C3CB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2AE3C68423015FED00BE72F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AE3C68323015FED00BE72F7 /* YPScrollPageView.app */,
+				2AE3C69B23015FEE00BE72F7 /* YPScrollPageViewTests.xctest */,
+				2AE3C6A623015FEE00BE72F7 /* YPScrollPageViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AE3C68523015FED00BE72F7 /* YPScrollPageView */ = {
+			isa = PBXGroup;
+			children = (
+				2AE3C6DD2301622100BE72F7 /* YPScrollPageView.podspec */,
+				2AE3C6B82301613700BE72F7 /* Controller */,
+				2AE3C68623015FED00BE72F7 /* AppDelegate.h */,
+				2AE3C68723015FED00BE72F7 /* AppDelegate.m */,
+				2AE3C68923015FED00BE72F7 /* ViewController.h */,
+				2AE3C68A23015FED00BE72F7 /* ViewController.m */,
+				2AE3C6C52301615100BE72F7 /* YPScrollPageView */,
+				2AE3C68C23015FED00BE72F7 /* Main.storyboard */,
+				2AE3C68F23015FEE00BE72F7 /* Assets.xcassets */,
+				2AE3C69123015FEE00BE72F7 /* LaunchScreen.storyboard */,
+				2AE3C69423015FEE00BE72F7 /* Info.plist */,
+				2AE3C69523015FEE00BE72F7 /* main.m */,
+			);
+			path = YPScrollPageView;
+			sourceTree = "<group>";
+		};
+		2AE3C69E23015FEE00BE72F7 /* YPScrollPageViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AE3C69F23015FEE00BE72F7 /* YPScrollPageViewTests.m */,
+				2AE3C6A123015FEE00BE72F7 /* Info.plist */,
+			);
+			path = YPScrollPageViewTests;
+			sourceTree = "<group>";
+		};
+		2AE3C6A923015FEE00BE72F7 /* YPScrollPageViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2AE3C6AA23015FEE00BE72F7 /* YPScrollPageViewUITests.m */,
+				2AE3C6AC23015FEE00BE72F7 /* Info.plist */,
+			);
+			path = YPScrollPageViewUITests;
+			sourceTree = "<group>";
+		};
+		2AE3C6B82301613700BE72F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2AE3C6B92301613700BE72F7 /* YPSubUniteController.h */,
+				2AE3C6BA2301613700BE72F7 /* YPSubPartController.h */,
+				2AE3C6BB2301613700BE72F7 /* YPUniteController.h */,
+				2AE3C6BC2301613700BE72F7 /* YPPartController.h */,
+				2AE3C6BD2301613700BE72F7 /* YPSubPartController.m */,
+				2AE3C6BE2301613700BE72F7 /* YPSubUniteController.m */,
+				2AE3C6BF2301613700BE72F7 /* YPPartController.m */,
+				2AE3C6C02301613700BE72F7 /* YPUniteController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2AE3C6C52301615100BE72F7 /* YPScrollPageView */ = {
+			isa = PBXGroup;
+			children = (
+				2AE3C6C62301615100BE72F7 /* config */,
+				2AE3C6C92301615100BE72F7 /* other */,
+				2AE3C6CD2301615100BE72F7 /* view */,
+				2AE3C6D62301615100BE72F7 /* YPHeader.h */,
+			);
+			path = YPScrollPageView;
+			sourceTree = "<group>";
+		};
+		2AE3C6C62301615100BE72F7 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				2AE3C6C72301615100BE72F7 /* YPSegmentStyle.m */,
+				2AE3C6C82301615100BE72F7 /* YPSegmentStyle.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		2AE3C6C92301615100BE72F7 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				2AE3C6CA2301615100BE72F7 /* UIView+YPExtention.h */,
+				2AE3C6CB2301615100BE72F7 /* YPScrollPageViewDelegate.h */,
+				2AE3C6CC2301615100BE72F7 /* UIView+YPExtention.m */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		2AE3C6CD2301615100BE72F7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2AE3C6CE2301615100BE72F7 /* YPSegmentView.h */,
+				2AE3C6CF2301615100BE72F7 /* YPScrollPageView.m */,
+				2AE3C6D02301615100BE72F7 /* YPSegmentItem.h */,
+				2AE3C6D12301615100BE72F7 /* YPContentView.m */,
+				2AE3C6D22301615100BE72F7 /* YPSegmentView.m */,
+				2AE3C6D32301615100BE72F7 /* YPSegmentItem.m */,
+				2AE3C6D42301615100BE72F7 /* YPScrollPageView.h */,
+				2AE3C6D52301615100BE72F7 /* YPContentView.h */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9D296E17D50A25CA3EC15C6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9945B6235BAA5E0B0A7B368A /* Pods-YPScrollPageView.debug.xcconfig */,
+				564317A4D691A74837168EEC /* Pods-YPScrollPageView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D837331160FB396A49D9C3CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9C357EE20134BAF0181E743 /* libPods-YPScrollPageView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AE3C68223015FED00BE72F7 /* YPScrollPageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE3C6AF23015FEE00BE72F7 /* Build configuration list for PBXNativeTarget "YPScrollPageView" */;
+			buildPhases = (
+				8EED5531042298B75F4CC4C3 /* [CP] Check Pods Manifest.lock */,
+				2AE3C67F23015FED00BE72F7 /* Sources */,
+				2AE3C68023015FED00BE72F7 /* Frameworks */,
+				2AE3C68123015FED00BE72F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YPScrollPageView;
+			productName = YPScrollPageView;
+			productReference = 2AE3C68323015FED00BE72F7 /* YPScrollPageView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AE3C69A23015FEE00BE72F7 /* YPScrollPageViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE3C6B223015FEE00BE72F7 /* Build configuration list for PBXNativeTarget "YPScrollPageViewTests" */;
+			buildPhases = (
+				2AE3C69723015FEE00BE72F7 /* Sources */,
+				2AE3C69823015FEE00BE72F7 /* Frameworks */,
+				2AE3C69923015FEE00BE72F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AE3C69D23015FEE00BE72F7 /* PBXTargetDependency */,
+			);
+			name = YPScrollPageViewTests;
+			productName = YPScrollPageViewTests;
+			productReference = 2AE3C69B23015FEE00BE72F7 /* YPScrollPageViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AE3C6A523015FEE00BE72F7 /* YPScrollPageViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE3C6B523015FEE00BE72F7 /* Build configuration list for PBXNativeTarget "YPScrollPageViewUITests" */;
+			buildPhases = (
+				2AE3C6A223015FEE00BE72F7 /* Sources */,
+				2AE3C6A323015FEE00BE72F7 /* Frameworks */,
+				2AE3C6A423015FEE00BE72F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AE3C6A823015FEE00BE72F7 /* PBXTargetDependency */,
+			);
+			name = YPScrollPageViewUITests;
+			productName = YPScrollPageViewUITests;
+			productReference = 2AE3C6A623015FEE00BE72F7 /* YPScrollPageViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AE3C67B23015FED00BE72F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "王艳苹";
+				TargetAttributes = {
+					2AE3C68223015FED00BE72F7 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					2AE3C69A23015FEE00BE72F7 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 2AE3C68223015FED00BE72F7;
+					};
+					2AE3C6A523015FEE00BE72F7 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 2AE3C68223015FED00BE72F7;
+					};
+				};
+			};
+			buildConfigurationList = 2AE3C67E23015FED00BE72F7 /* Build configuration list for PBXProject "YPScrollPageView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AE3C67A23015FED00BE72F7;
+			productRefGroup = 2AE3C68423015FED00BE72F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AE3C68223015FED00BE72F7 /* YPScrollPageView */,
+				2AE3C69A23015FEE00BE72F7 /* YPScrollPageViewTests */,
+				2AE3C6A523015FEE00BE72F7 /* YPScrollPageViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AE3C68123015FED00BE72F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE3C6DE2301622100BE72F7 /* YPScrollPageView.podspec in Resources */,
+				2AE3C69323015FEE00BE72F7 /* LaunchScreen.storyboard in Resources */,
+				2AE3C69023015FEE00BE72F7 /* Assets.xcassets in Resources */,
+				2AE3C68E23015FED00BE72F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE3C69923015FEE00BE72F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE3C6A423015FEE00BE72F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8EED5531042298B75F4CC4C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YPScrollPageView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AE3C67F23015FED00BE72F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE3C6D72301615100BE72F7 /* YPSegmentStyle.m in Sources */,
+				2AE3C68B23015FED00BE72F7 /* ViewController.m in Sources */,
+				2AE3C6C32301614100BE72F7 /* YPPartController.m in Sources */,
+				2AE3C6C42301614100BE72F7 /* YPUniteController.m in Sources */,
+				2AE3C6DA2301615100BE72F7 /* YPContentView.m in Sources */,
+				2AE3C6C22301614100BE72F7 /* YPSubUniteController.m in Sources */,
+				2AE3C6D92301615100BE72F7 /* YPScrollPageView.m in Sources */,
+				2AE3C69623015FEE00BE72F7 /* main.m in Sources */,
+				2AE3C6D82301615100BE72F7 /* UIView+YPExtention.m in Sources */,
+				2AE3C6DB2301615100BE72F7 /* YPSegmentView.m in Sources */,
+				2AE3C6C12301614100BE72F7 /* YPSubPartController.m in Sources */,
+				2AE3C6DC2301615100BE72F7 /* YPSegmentItem.m in Sources */,
+				2AE3C68823015FED00BE72F7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE3C69723015FEE00BE72F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE3C6A023015FEE00BE72F7 /* YPScrollPageViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE3C6A223015FEE00BE72F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE3C6AB23015FEE00BE72F7 /* YPScrollPageViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AE3C69D23015FEE00BE72F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AE3C68223015FED00BE72F7 /* YPScrollPageView */;
+			targetProxy = 2AE3C69C23015FEE00BE72F7 /* PBXContainerItemProxy */;
+		};
+		2AE3C6A823015FEE00BE72F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AE3C68223015FED00BE72F7 /* YPScrollPageView */;
+			targetProxy = 2AE3C6A723015FEE00BE72F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2AE3C68C23015FED00BE72F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AE3C68D23015FED00BE72F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2AE3C69123015FEE00BE72F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AE3C69223015FEE00BE72F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2AE3C6AD23015FEE00BE72F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2AE3C6AE23015FEE00BE72F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AE3C6B023015FEE00BE72F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9945B6235BAA5E0B0A7B368A /* Pods-YPScrollPageView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 568Z527VDQ;
+				INFOPLIST_FILE = YPScrollPageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esk.tgPlatform.YPScrollPageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AE3C6B123015FEE00BE72F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 564317A4D691A74837168EEC /* Pods-YPScrollPageView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 568Z527VDQ;
+				INFOPLIST_FILE = YPScrollPageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esk.tgPlatform.YPScrollPageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2AE3C6B323015FEE00BE72F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 568Z527VDQ;
+				INFOPLIST_FILE = YPScrollPageViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esk.tgPlatform.YPScrollPageViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YPScrollPageView.app/YPScrollPageView";
+			};
+			name = Debug;
+		};
+		2AE3C6B423015FEE00BE72F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 568Z527VDQ;
+				INFOPLIST_FILE = YPScrollPageViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esk.tgPlatform.YPScrollPageViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YPScrollPageView.app/YPScrollPageView";
+			};
+			name = Release;
+		};
+		2AE3C6B623015FEE00BE72F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 568Z527VDQ;
+				INFOPLIST_FILE = YPScrollPageViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esk.tgPlatform.YPScrollPageViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YPScrollPageView;
+			};
+			name = Debug;
+		};
+		2AE3C6B723015FEE00BE72F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 568Z527VDQ;
+				INFOPLIST_FILE = YPScrollPageViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esk.tgPlatform.YPScrollPageViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YPScrollPageView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AE3C67E23015FED00BE72F7 /* Build configuration list for PBXProject "YPScrollPageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE3C6AD23015FEE00BE72F7 /* Debug */,
+				2AE3C6AE23015FEE00BE72F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AE3C6AF23015FEE00BE72F7 /* Build configuration list for PBXNativeTarget "YPScrollPageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE3C6B023015FEE00BE72F7 /* Debug */,
+				2AE3C6B123015FEE00BE72F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AE3C6B223015FEE00BE72F7 /* Build configuration list for PBXNativeTarget "YPScrollPageViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE3C6B323015FEE00BE72F7 /* Debug */,
+				2AE3C6B423015FEE00BE72F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AE3C6B523015FEE00BE72F7 /* Build configuration list for PBXNativeTarget "YPScrollPageViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AE3C6B623015FEE00BE72F7 /* Debug */,
+				2AE3C6B723015FEE00BE72F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AE3C67B23015FED00BE72F7 /* Project object */;
+}
