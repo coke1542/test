@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "YPScrollPageView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "YPScrollPageView."
 
   s.description  = <<-DESC
-                    第一版YPScrollPageView内部测试版本
+                    测试上传
                    DESC
 
   s.homepage     = "https://github.com/hz-wyp/YPScrollPageView"

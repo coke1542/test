@@ -25,6 +25,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame segmentStyle:(YPSegmentStyle *)segmentStyle titles:(NSArray<NSString *> *)titles parentViewController:(UIViewController *)parentViewController delegate:(id<YPScrollPageViewDelegate>) delegate {
     if (self = [super initWithFrame:frame]) {
+        //成功
         self.segmentStyle = segmentStyle;
         self.delegate = delegate;
         self.parentViewController = parentViewController;

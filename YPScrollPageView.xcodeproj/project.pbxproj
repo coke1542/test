@@ -205,8 +205,8 @@
 		2AE3C6C62301615100BE72F7 /* config */ = {
 			isa = PBXGroup;
 			children = (
-				2AE3C6C72301615100BE72F7 /* YPSegmentStyle.m */,
 				2AE3C6C82301615100BE72F7 /* YPSegmentStyle.h */,
+				2AE3C6C72301615100BE72F7 /* YPSegmentStyle.m */,
 			);
 			path = config;
 			sourceTree = "<group>";
@@ -214,8 +214,8 @@
 		2AE3C6C92301615100BE72F7 /* other */ = {
 			isa = PBXGroup;
 			children = (
-				2AE3C6CA2301615100BE72F7 /* UIView+YPExtention.h */,
 				2AE3C6CB2301615100BE72F7 /* YPScrollPageViewDelegate.h */,
+				2AE3C6CA2301615100BE72F7 /* UIView+YPExtention.h */,
 				2AE3C6CC2301615100BE72F7 /* UIView+YPExtention.m */,
 			);
 			path = other;
