@@ -5,10 +5,10 @@ Pod::Spec.new do |s|
   s.summary      = "YPScrollPageView."
 
   s.description  = <<-DESC
-                    this is YPScrollPageView
+                    第一版YPScrollPageView内部测试版本
                    DESC
 
-  s.homepage     = "https://gitee.com/esk/YPScrollPageView"
+  s.homepage     = "https://github.com/hz-wyp/YPScrollPageView"
 
   s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
-  s.source       = { :git => "https://gitee.com/esk/YPScrollPageView.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/hz-wyp/YPScrollPageView.git", :tag => s.version.to_s }
 
   s.source_files  = "YPScrollPageView/YPScrollPageView/**/*.{h,m,swift}"
   # s.exclude_files = "Classes/Exclude"
