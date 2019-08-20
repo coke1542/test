@@ -179,14 +179,14 @@
 		2AE3C6B82301613700BE72F7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2AE3C6B92301613700BE72F7 /* YPSubUniteController.h */,
-				2AE3C6BA2301613700BE72F7 /* YPSubPartController.h */,
 				2AE3C6BB2301613700BE72F7 /* YPUniteController.h */,
-				2AE3C6BC2301613700BE72F7 /* YPPartController.h */,
-				2AE3C6BD2301613700BE72F7 /* YPSubPartController.m */,
-				2AE3C6BE2301613700BE72F7 /* YPSubUniteController.m */,
-				2AE3C6BF2301613700BE72F7 /* YPPartController.m */,
 				2AE3C6C02301613700BE72F7 /* YPUniteController.m */,
+				2AE3C6B92301613700BE72F7 /* YPSubUniteController.h */,
+				2AE3C6BE2301613700BE72F7 /* YPSubUniteController.m */,
+				2AE3C6BC2301613700BE72F7 /* YPPartController.h */,
+				2AE3C6BF2301613700BE72F7 /* YPPartController.m */,
+				2AE3C6BA2301613700BE72F7 /* YPSubPartController.h */,
+				2AE3C6BD2301613700BE72F7 /* YPSubPartController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,10 +194,10 @@
 		2AE3C6C52301615100BE72F7 /* YPScrollPageView */ = {
 			isa = PBXGroup;
 			children = (
+				2AE3C6D62301615100BE72F7 /* YPHeader.h */,
 				2AE3C6C62301615100BE72F7 /* config */,
 				2AE3C6C92301615100BE72F7 /* other */,
 				2AE3C6CD2301615100BE72F7 /* view */,
-				2AE3C6D62301615100BE72F7 /* YPHeader.h */,
 			);
 			path = YPScrollPageView;
 			sourceTree = "<group>";
@@ -214,9 +214,9 @@
 		2AE3C6C92301615100BE72F7 /* other */ = {
 			isa = PBXGroup;
 			children = (
-				2AE3C6CB2301615100BE72F7 /* YPScrollPageViewDelegate.h */,
 				2AE3C6CA2301615100BE72F7 /* UIView+YPExtention.h */,
 				2AE3C6CC2301615100BE72F7 /* UIView+YPExtention.m */,
+				2AE3C6CB2301615100BE72F7 /* YPScrollPageViewDelegate.h */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -224,14 +224,14 @@
 		2AE3C6CD2301615100BE72F7 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				2AE3C6D52301615100BE72F7 /* YPContentView.h */,
+				2AE3C6D12301615100BE72F7 /* YPContentView.m */,
 				2AE3C6CE2301615100BE72F7 /* YPSegmentView.h */,
+				2AE3C6D22301615100BE72F7 /* YPSegmentView.m */,
+				2AE3C6D42301615100BE72F7 /* YPScrollPageView.h */,
 				2AE3C6CF2301615100BE72F7 /* YPScrollPageView.m */,
 				2AE3C6D02301615100BE72F7 /* YPSegmentItem.h */,
-				2AE3C6D12301615100BE72F7 /* YPContentView.m */,
-				2AE3C6D22301615100BE72F7 /* YPSegmentView.m */,
 				2AE3C6D32301615100BE72F7 /* YPSegmentItem.m */,
-				2AE3C6D42301615100BE72F7 /* YPScrollPageView.h */,
-				2AE3C6D52301615100BE72F7 /* YPContentView.h */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -597,13 +597,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 568Z527VDQ;
 				INFOPLIST_FILE = YPScrollPageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.esk.tgPlatform.YPScrollPageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -614,14 +615,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 568Z527VDQ;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					NS_BLOCK_ASSERTIONS,
+				);
 				INFOPLIST_FILE = YPScrollPageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.esk.tgPlatform.YPScrollPageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

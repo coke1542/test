@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-#import "YPSegmentStyle.h"
 #import "YPSegmentView.h"
 #import "YPContentView.h"
+#import "YPSegmentStyle.h"
+#import "UIView+YPExtention.h"
 #import "YPScrollPageViewDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN

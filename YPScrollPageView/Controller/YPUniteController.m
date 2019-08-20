@@ -9,7 +9,8 @@
 #import "YPUniteController.h"
 #import "YPSubUniteController.h"
 
-#import "YPHeader.h"
+#import "YPFrameConfig.h"
+
 #import "YPSegmentStyle.h"
 #import "YPScrollPageView.h"
 #import "YPScrollPageViewDelegate.h"
@@ -37,13 +38,12 @@
     return vc;
 }
 
-
 - (YPScrollPageView *)pageView{
     if (!_pageView) {
         YPSegmentStyle *style = [[YPSegmentStyle alloc]init];
         style.selectedItemType = YPSelectedItemFontBigger;
         style.itemWidthType = YPItemWidthAdaptionByFont;
-        _pageView = [[YPScrollPageView alloc]initWithFrame:CGRectMake(0, StatusBarAndNavigationBarHeight, SCREEN_WIDTH, SCREEN_HEIGHT - StatusBarAndNavigationBarHeight) segmentStyle:style titles:self.titleArray parentViewController:self delegate:self];
+        _pageView = [[YPScrollPageView alloc]initWithFrame:CGRectMake(0, __kStatusBarHeight__, __kScreenWidth__, __kScreenHeight__ - __kNavigationBarHeight__) segmentStyle:style titles:self.titleArray parentViewController:self delegate:self];
         [self.view addSubview:_pageView];
     }
     return _pageView;

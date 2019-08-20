@@ -10,7 +10,7 @@
 #import "YPPartController.h"
 
 #import "YPHeader.h"
-
+#import "YPFrameConfig.h"
 @interface YPSubPartController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *mainTableView;
@@ -54,7 +54,7 @@
 
 - (UITableView *)mainTableView{
     if (!_mainTableView) {
-        _mainTableView = [[UITableView alloc]initWithFrame:CGRectMake(0,0, self.view.width, self.view.height - StatusBarHeight - 50) style:UITableViewStylePlain];
+        _mainTableView = [[UITableView alloc]initWithFrame:CGRectMake(0,0, self.view.width, self.view.height - __kStatusBarHeight__ - 50) style:UITableViewStylePlain];
         _mainTableView.delegate = self;
         _mainTableView.dataSource = self;
         _mainTableView.showsVerticalScrollIndicator = NO;

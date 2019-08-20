@@ -49,10 +49,6 @@
     return self;
 }
 
-- (void)reload{
-    //刷新方法
-}
-
 /**初始化方法:单独使用*/
 - (instancetype)initWithFrame:(CGRect)frame selectedIndex:(NSInteger)index parentViewController:(UIViewController *)parentViewController delegate:(id<YPScrollPageViewDelegate>) delegate{
     if (self = [super initWithFrame:frame]) {
@@ -75,6 +71,17 @@
     [self scrollControllerAtIndex:self.currentIndex];
 }
 
+- (void)reload{
+    //刷新方法
+    [self.childControllersDic removeAllObjects];//删除所有数据
+    self.currentChildController = nil;
+    self.currentIndex = 0;
+    if (self.segmentView) {
+        self.currentIndex = self.segmentView.selectIndex;
+    }
+    [self commonInit];
+}
+
 - (void)scrollControllerAtIndex:(NSInteger)index{
     self.currentIndex = index;
     CGFloat offsetX = index * self.frame.size.width;
@@ -90,9 +97,6 @@
 }
 
 - (void)addChildViewAtIndex:(NSString *)index{
-    if (self.currentIndex != [index integerValue]) {
-        return; // 跳过中间的多页
-    }
     self.currentChildController = self.childControllersDic[index];
     if (self.delegate && [self.delegate respondsToSelector:@selector(childViewController:forIndex:)]) {
         if (self.currentChildController == nil) {
@@ -151,7 +155,6 @@
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView*)scrollView {
-    NSLog(@"结束滚动");
     if (self.childControllersDic) {
         int index = (int)self.scrollView.contentOffset.x / self.scrollView.frame.size.width;
         [self addChildViewAtIndex:[NSString stringWithFormat:@"%d",index]];

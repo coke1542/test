@@ -9,7 +9,8 @@
 #import "YPPartController.h"
 #import "YPSubPartController.h"
 
-#import "YPHeader.h"
+#import "YPFrameConfig.h"
+#import "YPSystemConfig.h"
 #import "YPSegmentStyle.h"
 #import "YPSegmentView.h"
 #import "YPContentView.h"
@@ -38,8 +39,10 @@
 
 - (void)configureContentView{
     YPSegmentStyle *style = [[YPSegmentStyle alloc]init];
-    style.selectedItemType = YPSelectedItemFontBigger;
+    style.selectedItemType = YPSelectedItemUnderLine;
     style.itemWidthType = YPItemWidthAdaptionByFont;
+    style.isUnderlineGraduallyVaried = YES;
+    style.isColorGraduallyVaried = YES;
     self.segmentView.segmentStyle = style;
     self.segmentView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.segmentView];
@@ -62,8 +65,8 @@
 
 - (YPSegmentView *)segmentView{
     if (!_segmentView) {
-        _segmentView = [YPSegmentView segmentViewWithFrame:CGRectMake(0, StatusBarAndNavigationBarHeight, SCREEN_WIDTH,44.0f) titles:self.titleArray];
-        WEAKSELF
+        _segmentView = [YPSegmentView segmentViewWithFrame:CGRectMake(0, __kStatusBarHeight__, __kScreenWidth__,44.0f) titles:self.titleArray];
+        __kWeakSelf__
         _segmentView.clickIndexBlock = ^(NSInteger clickIndex) {
             [weakSelf.content scrollControllerAtIndex:clickIndex];
         };

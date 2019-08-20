@@ -7,7 +7,7 @@
 //
 
 #import "YPSegmentStyle.h"
-#import "YPHeader.h"
+
 @implementation YPSegmentStyle
 
 - (instancetype)init{

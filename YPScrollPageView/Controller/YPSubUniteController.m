@@ -7,7 +7,7 @@
 //
 
 #import "YPSubUniteController.h"
-#import "YPHeader.h"
+#import "YPColorConfig.h"
 
 @interface YPSubUniteController ()
 
@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = YPRandomColor;
+    self.view.backgroundColor = __kRandomColor__;
 }
 
 @end

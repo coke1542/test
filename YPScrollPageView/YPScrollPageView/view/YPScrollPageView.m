@@ -7,7 +7,6 @@
 //
 
 #import "YPScrollPageView.h"
-#import "YPHeader.h"
 
 @interface YPScrollPageView ()
 
@@ -25,7 +24,6 @@
 
 - (instancetype)initWithFrame:(CGRect)frame segmentStyle:(YPSegmentStyle *)segmentStyle titles:(NSArray<NSString *> *)titles parentViewController:(UIViewController *)parentViewController delegate:(id<YPScrollPageViewDelegate>) delegate {
     if (self = [super initWithFrame:frame]) {
-        //成功
         self.segmentStyle = segmentStyle;
         self.delegate = delegate;
         self.parentViewController = parentViewController;
@@ -47,7 +45,7 @@
     [self.segmentView setSelectIndex:selectedIndex];
 }
 
-/**  给外界重新设置视图内容的标题的方法 */
+/**给外界重新设置视图内容的标题的方法 */
 - (void)reloadWithNewTitles:(NSArray<NSString *> *)newTitles {
     self.titlesArray = nil;
     self.titlesArray = newTitles.copy;
@@ -55,7 +53,6 @@
     [self.segmentView reloadData];
     [self.contentView reload];
 }
-
 
 #pragma mark - getter ---- setter
 - (void)setSegmentStyle:(YPSegmentStyle *)segmentStyle{
@@ -103,10 +100,6 @@
 - (void)setsegmentViewBlock:(ClickSegmentViewBlock)segmentViewBlock{
     _segmentViewBlock = segmentViewBlock;
     self.segmentView.clickIndexBlock = segmentViewBlock;
-}
-
-- (void)dealloc {
-    NSLog(@"ZJScrollPageView--销毁");
 }
 
 @end

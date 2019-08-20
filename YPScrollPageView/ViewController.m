@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "YPUniteController.h"
 #import "YPPartController.h"
+#import "YPColorConfig.h"
+#import "MBProgressHUD.h"
+
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -22,6 +25,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.mainTableView.backgroundColor = [UIColor whiteColor];
+}
+
+- (UIView *)setTestViewByFrame:(CGRect)frame{
+    UIView *testView = [[UIView alloc]init];
+    testView.frame = frame;
+    testView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:testView];
+    return testView;
+}
+//视觉效果
+- (void)setEffect{
+    UIView *testView = [self setTestViewByFrame:CGRectMake(200, 100,100, 100)];
+    CGFloat effectOffset = 10.f;
+    UIInterpolatingMotionEffect *effectX = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+    effectX.maximumRelativeValue = @(effectOffset);
+    effectX.minimumRelativeValue = @(-effectOffset);
+    
+    UIInterpolatingMotionEffect *effectY = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y" type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+    effectY.maximumRelativeValue = @(effectOffset);
+    effectY.minimumRelativeValue = @(-effectOffset);
+    
+    UIMotionEffectGroup *group = [[UIMotionEffectGroup alloc] init];
+    group.motionEffects = @[effectX, effectY];
+    
+    [testView addMotionEffect:group];
+}
+
+- (void)siteBySuperView{
+    UIView *testView = [self setTestViewByFrame:CGRectMake(200, 300,100, 100)];
+    //    typedef NS_OPTIONS(NSUInteger, UIViewAutoresizing) {
+    //        UIViewAutoresizingNone                 = 0,
+    //        UIViewAutoresizingFlexibleLeftMargin   = 1 << 0,
+    //        UIViewAutoresizingFlexibleWidth        = 1 << 1,
+    //        UIViewAutoresizingFlexibleRightMargin  = 1 << 2,
+    //        UIViewAutoresizingFlexibleTopMargin    = 1 << 3,
+    //        UIViewAutoresizingFlexibleHeight       = 1 << 4,
+    //        UIViewAutoresizingFlexibleBottomMargin = 1 << 5
+    //    };
+    testView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin;
 }
 
 #pragma mark ---- UITableViewDelegate
