@@ -49,7 +49,8 @@ Pod::Spec.new do |s|
       ss.source_files = 'YPScrollPageView/YPScrollPageView/config/*.{h,m}'
   end
   s.subspec 'view' do |ss|
-      ss.dependency 'YPScrollPageView/YPScrollPageView/config','YPScrollPageView/YPScrollPageView/other'
+      ss.dependency 'YPScrollPageView/config'
+      ss.dependency 'YPScrollPageView/other'
       ss.source_files = 'YPScrollPageView/YPScrollPageView/view/*.{h,m}'
   end
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
