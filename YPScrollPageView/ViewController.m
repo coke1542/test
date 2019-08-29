@@ -10,7 +10,6 @@
 #import "YPUniteController.h"
 #import "YPPartController.h"
 #import "YPColorConfig.h"
-#import "MBProgressHUD.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>

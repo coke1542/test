@@ -97,29 +97,31 @@
 }
 
 - (void)addChildViewAtIndex:(NSString *)index{
-    self.currentChildController = self.childControllersDic[index];
-    if (self.delegate && [self.delegate respondsToSelector:@selector(childViewController:forIndex:)]) {
-        if (self.currentChildController == nil) {
-            self.currentChildController = [self.delegate childViewController:nil forIndex:[index integerValue]];
-            // 设置当前下标
-            [self.childControllersDic setValue:self.currentChildController forKey:index];
+    if (self.segmentView && self.segmentView.titles.count > [index integerValue]) {
+        self.currentChildController = self.childControllersDic[index];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(childViewController:forIndex:)]) {
+            if (self.currentChildController == nil) {
+                self.currentChildController = [self.delegate childViewController:nil forIndex:[index integerValue]];
+                // 设置当前下标
+                [self.childControllersDic setValue:self.currentChildController forKey:index];
+            } else {
+                [_delegate childViewController:self.currentChildController forIndex:[index integerValue]];
+            }
         } else {
-            [_delegate childViewController:self.currentChildController forIndex:[index integerValue]];
+            NSAssert(NO, @"必须设置代理和实现代理方法");
         }
-    } else {
-        NSAssert(NO, @"必须设置代理和实现代理方法");
-    }
-    // 这里建立子控制器和父控制器的关系
-    if ([self.currentChildController isKindOfClass:[UINavigationController class]]) {
-        NSAssert(NO, @"不要添加UINavigationController包装后的子控制器");
-    }
-    [self.parentViewController addChildViewController:self.currentChildController];
-    self.currentChildController.view.frame = CGRectMake(self.width * [index integerValue],0, self.width, self.height);
-    [self.scrollView addSubview:self.currentChildController.view];
-    [self.currentChildController didMoveToParentViewController:self.parentViewController];
-    if (self.segmentView) {
-        [self.segmentView refreshContentOffsetItemByIndex:[index integerValue]];
-        [self.segmentView adjustTitleOffSetToCurrent];
+        // 这里建立子控制器和父控制器的关系
+        if ([self.currentChildController isKindOfClass:[UINavigationController class]]) {
+            NSAssert(NO, @"不要添加UINavigationController包装后的子控制器");
+        }
+        [self.parentViewController addChildViewController:self.currentChildController];
+        self.currentChildController.view.frame = CGRectMake(self.width * [index integerValue],0, self.width, self.height);
+        [self.scrollView addSubview:self.currentChildController.view];
+        [self.currentChildController didMoveToParentViewController:self.parentViewController];
+        if (self.segmentView) {
+            [self.segmentView refreshContentOffsetItemByIndex:[index integerValue]];
+            [self.segmentView adjustTitleOffSetToCurrent];
+        }
     }
 }
 

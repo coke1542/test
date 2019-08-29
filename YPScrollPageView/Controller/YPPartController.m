@@ -65,7 +65,7 @@
 
 - (YPSegmentView *)segmentView{
     if (!_segmentView) {
-        _segmentView = [YPSegmentView segmentViewWithFrame:CGRectMake(0, __kStatusBarHeight__, __kScreenWidth__,44.0f) titles:self.titleArray];
+        _segmentView = [YPSegmentView segmentViewWithFrame:CGRectMake(0,__kNavigationBarHeight__, __kScreenWidth__,44.0f) titles:self.titleArray];
         __kWeakSelf__
         _segmentView.clickIndexBlock = ^(NSInteger clickIndex) {
             [weakSelf.content scrollControllerAtIndex:clickIndex];

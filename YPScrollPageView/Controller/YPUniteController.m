@@ -43,7 +43,7 @@
         YPSegmentStyle *style = [[YPSegmentStyle alloc]init];
         style.selectedItemType = YPSelectedItemFontBigger;
         style.itemWidthType = YPItemWidthAdaptionByFont;
-        _pageView = [[YPScrollPageView alloc]initWithFrame:CGRectMake(0, __kStatusBarHeight__, __kScreenWidth__, __kScreenHeight__ - __kNavigationBarHeight__) segmentStyle:style titles:self.titleArray parentViewController:self delegate:self];
+        _pageView = [[YPScrollPageView alloc]initWithFrame:CGRectMake(0,__kNavigationBarHeight__, __kScreenWidth__, __kScreenHeight__ - __kNavigationBarHeight__) segmentStyle:style titles:self.titleArray parentViewController:self delegate:self];
         [self.view addSubview:_pageView];
     }
     return _pageView;
